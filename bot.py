@@ -27,9 +27,9 @@ async def cancel(event):
 async def start(event):
   await event.reply("**LoungeTagger Bot**, Grup veya kanaldaki neredeyse tüm üyelerden bahsedebilirim ★\nDaha fazla bilgi için **/help**'i tıklayın.",
                     buttons=(
-                      [Button.url('🌟 Beni Bir Gruba Ekle', 'https://t.me/loungetaggerbot?startgroup=a'),
-                      Button.url('📣 Support', 'https://t.me/loungesupport'),
-                      Button.url('🚀 Sahibim', 'https://t.me/bodrumlubebekk')]
+                      [Button.url('🌟 Beni Bir Gruba Ekle', 'https://t.me/qlobaltaggerbot?startgroup=a'),
+                      Button.url('📣 Support', 'https://t.me/Qloobalsupport),
+                      Button.url('🚀 Sahibim', 'https://t.me/@HeciGeldificuu')]
                     ),
                     link_preview=False
                    )
@@ -97,7 +97,7 @@ async def mentionall(event):
       usrnum += 1
       usrtxt += f"[{usr.first_name}](tg://user?id={usr.id}) "
       if event.chat_id not in anlik_calisan:
-        await event.respond("İşlem Başarılı Bir Şekilde Durduruldu ❌")
+        await event.respond("Prossesor Uğurla Dayandırlmışdır ❌")
         return
       if usrnum == 5:
         await client.send_message(event.chat_id, usrtxt, reply_to=msg)
